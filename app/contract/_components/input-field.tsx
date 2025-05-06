@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import { UseFormRegister } from "react-hook-form";
 import { Input } from "@/app/_core/components/ui/input";
 import { ContractFormFields } from "@/app/_core/models/models";
 import { Label } from "@radix-ui/react-label";
-  
+
 export function InputField({
   label,
   id,

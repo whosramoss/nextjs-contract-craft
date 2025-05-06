@@ -13,11 +13,12 @@ export function isValidCPF(cpf: string): boolean {
 
   const digits = cpf.split("").map(Number);
   const calcCheckDigit = (slice: number, weightStart: number) =>
-      ((digits
-          .slice(0, slice)
-          .reduce((acc, digit, i) => acc + digit * (weightStart - i), 0) * 10) %
-          11) %
-      10;
+    ((digits
+      .slice(0, slice)
+      .reduce((acc, digit, i) => acc + digit * (weightStart - i), 0) *
+      10) %
+      11) %
+    10;
 
   const d1 = calcCheckDigit(9, 10);
   const d2 = calcCheckDigit(10, 11);

@@ -11,16 +11,22 @@ type CNPJInputProps = {
   error?: string;
 };
 
-export function CNPJInput({ label, id, value, onChange, error }: CNPJInputProps) {
+export function CNPJInput({
+  label,
+  id,
+  value,
+  onChange,
+  error,
+}: CNPJInputProps) {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const rawValue = e.target.value.replace(/\D/g, ""); 
+    const rawValue = e.target.value.replace(/\D/g, "");
 
     const maskedValue = rawValue
       .replace(/^(\d{2})(\d)/, "$1.$2")
       .replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
       .replace(/^(\d{2})\.(\d{3})\.(\d{3})(\d)/, "$1.$2.$3/$4")
       .replace(/^(\d{2})\.(\d{3})\.(\d{3})\/(\d{4})(\d)/, "$1.$2.$3/$4-$5")
-      .slice(0, 18); 
+      .slice(0, 18);
 
     onChange(maskedValue);
   };

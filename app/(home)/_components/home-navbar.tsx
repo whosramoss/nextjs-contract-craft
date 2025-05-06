@@ -9,13 +9,7 @@ export default function HomeNavbar() {
   const isMobile = useMobileCheck();
 
   if (isMobile) {
-    return (
-      <Navbar.Dropdown
-        navitens={[
-          { name: "Github", href: "#" },
-        ]}
-      />
-    );
+    return <Navbar.Dropdown navitens={[{ name: "Github", href: "#" }]} />;
   }
 
   return (

@@ -10,7 +10,8 @@ export default function Footer() {
             <div className="flex-1 space-y-4">
               <h2 className="font-bold">Contract Craft</h2>
               <p className="text-sm text-muted-foreground">
-              Feito para transformar seus dados em PDFs,<br/> sem complicação.
+                Feito para transformar seus dados em PDFs,
+                <br /> sem complicação.
               </p>
             </div>
           </FadeIn.Item>

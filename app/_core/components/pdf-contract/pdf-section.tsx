@@ -1,5 +1,5 @@
-import { View, Text } from '@react-pdf/renderer';
-import { styles } from './_config/style';
+import { View, Text } from "@react-pdf/renderer";
+import { styles } from "./_config/style";
 
 type ParagraphPart = {
   text: string;
@@ -24,19 +24,16 @@ export const PdfSection = ({ section, index }: PdfSectionProps) => (
     >
       {section.title}
     </Text>
-    <Text style={{ marginBottom: 8 }}>{'_'.repeat(104)}</Text>
+    <Text style={{ marginBottom: 8 }}>{"_".repeat(104)}</Text>
 
     {section.paragraphs.map((paragraph, pIdx) => (
       <Text key={pIdx} style={{ ...styles.text, marginTop: 15 }}>
         {paragraph.map((part, partIdx) => (
-          <Text
-            key={partIdx}
-            style={part.bold ? { fontWeight: 'bold' } : {}}
-          >
+          <Text key={partIdx} style={part.bold ? { fontWeight: "bold" } : {}}>
             {part.text
-              .replace(/[\r\n\t]+/g, ' ')
-              .replace(/\s\s+/g, ' ')
-              .trim()}{' '}
+              .replace(/[\r\n\t]+/g, " ")
+              .replace(/\s\s+/g, " ")
+              .trim()}{" "}
           </Text>
         ))}
       </Text>

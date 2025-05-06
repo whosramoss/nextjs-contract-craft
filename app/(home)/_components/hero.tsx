@@ -13,7 +13,11 @@ export default function Hero() {
               Contract Craft
             </h1>
             <p className="mx-auto max-w-[48rem] text-sm leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            Este projeto gera arquivos contratos automaticamente a partir do input de dados fornecido pelo usuário. Ele permite transformar informações estruturadas — como textos, números ou listas — em documentos PDF bem formatados, com layout personalizável e seções dinâmicas.
+              Este projeto gera arquivos contratos automaticamente a partir do
+              input de dados fornecido pelo usuário. Ele permite transformar
+              informações estruturadas — como textos, números ou listas — em
+              documentos PDF bem formatados, com layout personalizável e seções
+              dinâmicas.
             </p>
           </FadeIn.Item>
         </FadeIn.Root>
