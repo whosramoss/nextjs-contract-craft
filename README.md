@@ -4,7 +4,7 @@
 </a>
 
 <p align="center">
-  This template provides a starting point for building Next.js apps with Tailwind CSS, TypeScript and Three.js.
+  Automatically generate PDFs from user data
 </p>
 
 <div align="center">
